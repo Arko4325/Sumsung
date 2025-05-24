@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cofee_mania</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "header">
+        <div class = "header__logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbMAAAB0CAMAAAA4qSwNAAAAeFBMVEUAAAD///9hYWHV1dXGxsaurq5lZWWZmZl4eHgqKip+fn7y8vKQkJAxMTH6+vrb29s5OTkNDQ3s7OzLy8vm5uaIiIjOzs6ioqJJSUng4OC8vLw+Pj5RUVEeHh5ycnL19fVZWVm0tLSqqqqMjIwkJCQYGBhFRUU8PDzg30XHAAAMy0lEQVR4nO1c2ULjMAzsEXqldymFAm3CwvL/f7jNUUsjy0lKssCD5qmNj9gaW5Zlxb2ewWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDoTFeT4dote1n2K6iw+n9pxtUg81ofxc9DFer4e44njz/dHNUJPu3sonRYfLYceWv86e+xP38NVxgMRpoGOkNW2u5R2vIk6j1BV6/Hsv2Lo963scZx4d7/rlnj/cLUchv72jK0l94wl+9ie/zlWxidAp05wvY3HmEFS95CxYZ6yX6T2rug5r3jmd51etTq/u7U/NuZ7WvJsHP4Lng+0Gp/cDShzwh1Zo4PapNPI/VDt2O01KXV/aOwCDq6VLrB4SsczbkWf42ry4wwi5Y+ZoBBxdxNoHngrNIqZuPRuj9Xc/HPNjEONEFehtCU0btzRX3ofyfWu43NeuWZznp1W28uja+FmfwxlhnnLGytZyp5a+Y6xK9BeEhUUBdoTY8B0xTVWUHZgY3c3Ra+/7E2Va2dilWpg45mwXSfc4qKev3/2giugVJdf0XU0Qr9chzQBMPWvaU56DFgA+HSEnvw+AuoC01HHJB7Y6zKJDucaavBAyJJqMbEFRyDtrK/odnmMfsz057CSzIJEVes5s+S5hxa1ETilrDBAt0x9k5kC45e65t4rbXCrPaF6gTLeUZBnxmqO0Bzmjl4mapU7BbUNZy31WtGTOIidYdZ/1ET5ec1WmCC/aakBpD7CGGp+n7SLZY2aaBHfAMBbS3QIaF+8W0DZmNEXAmVtMRtiweJ39nsrnoDOiQMxpiMAYFZ++yWHzvDTR1vWkK8YLSpBng04lfjmvDJcrlRXkNDD0qHFMOmnwH4EzUhruecrOQ4F4FdXlrzs7n6y+SdBVnwqYbJpdnn3K3JlX+LUAL261Fe3js7wNBZceoYDWrCDlzEllSDhLtAKQ8wIpgxLriOPvQCmrN2RNpfjeDqzgDE8ptuFGiqo3QFNijxD2Hketv9EFIw94L/3tUXoOckZFBs4iktIA2oTCn0C5601Z/7PfwC5zd08Rxy1DKywrOuApiiysUUffhTYFzlvY2sMz5LIBpd6FUbyYBxh5jnDZzboGMUcq43YPBwWY0rD8RFGnP2dT9fLimw34T5Q87V7asTOG5al03BLqgGnMGMprjtDx7uSVnpFlJjblHK5QyrqW4mfwezrZsFl/TYcwiZwuexM030AXgtrsRaJeSqqrhDOb/QGSXnoie5IyKO/GSh/iuijNcuEhn/1/OUt7VHLBrRs7A28CNaNgI6670ZsB5RuSALR/JUh9Qai1UrGJmAqesdmeJkS20R8Orap6R2QndQL3TAWdkRt9plSJn2ESWACJd+TJqDGGDutVjNmfwXIiwFzhvRB+UAxzBWer1iXh6Rs7QwML1jMbYKdzcDjjr8d9+pcgZ7pNYAsyzNpxJB3EzGxQM12yuwJbhwS8AY4x7vq56lMbOpoqzd3FqpB5dIVpzFvO/n4rYGnI2jBkUGTWG8Cs0koKYnZkqgvGveK9gjHGdf50TbiI+CYEIL4/0KKyUxRPRBWe0/yydDl/hrDv0JeIG59+g6jLb7xXGv+eLl5zReng9S+JWCQhE7NBTr73qOQJDF5yRhVTae6Bovp0zXwj9VW2wCWTPZwIYkolXAKZHj3FYmje0qZnLMwOsSPGZx4rNw9Ded7Vhg3RZBJT8LGe41btKsjqKCbcg+QYBZp5/EAuU9pidV67FZGyNBGfSb6ae+g/k+xg64YwqKbQQOOu+nTPpCCtxrAi5Et3NT/9TKOyVOPPkHpNB6TKc80TgzFN9auzKQ1g1tOfsg586FH37Yc6kuR8UFgF2lIXbAyTjnzSAoHvczix0jfMFZbVVcxY4V49Cg6w1Z8usZqfcz37hH+AsFEK1DB7MgfOk0G5of3olZCqtX4Vac6o1s4Fh5vubvUCwT2iQtecs8+aTg/HFa0MtZx/HSKKNrZ8jDUhhFVjWwKIorAi0DTxN5fXDTbw51phRBJwpew9vf1IiVkPE2p95ZmVoducL7G2caaGbumRvgL6m9bWTs570XBdZ0Nj3LDmvuc4BmXMyhZLQGu1kZxEKMNAyt+cs3wK6FTnXKzBs6jlT1mBNsLfhMyQFzf+MK0rpqIAKPIXmNTcFEdAeOwtPrOUsrBm2/ha7I87oSfbvN3AWDkyN66RQ6kEw9j1t7TXXGV5b+JenAWeef7pAEhpkntnfnrM1NjEbpL+Ds94iZIp4oQtH7eVwCugdoXklyNk15YXzWQecBRfrUBChXNTac/aMXchG0S/h7NIQPdQxluHXkO1KDzqbRYmNn+j+ZXaYGy756taMs940EK0rgs/bc1aEkztFkp0AATE/ydlFAZz9yr01bXPWEtGYEyJAwyl/5IjPdhQx/4Mb1iqj+FF+LJRDuKi74ozqebmZM6WVFd26FeqyhmYgfsBytRHQBya8VxiRlz9yCvbS440bh/nmBzirPoQfactax3FX5YpNu5k3YYbV76kfL3hOlYRu8KG4RXDkYmcdO/BUWA7ooMwfOV06ZItb7nK4hTP1CxFcTbvijCzje3H21NAPcggldADFJIPAUPzGxXW2Ktxh7TfXdS1mO9RicIA0aw90X33bCU6T2nP2Ivu9/nWcKbsf0DYY9uNcHhiKiRU++2lu6l3mlutNMT1v40z55AB8J51xRmTsMVDnV3DmSQGiYsAEoUhgnH5ovGmxSM7uSEhChU8FHEM4YzeI8umzMJ2A5/acJbLjOxyE383Zkgcp0Me+wqXHHfVobFDoE/q/qkJvimduuk5IrRYbYuAMzwhSqMgNJQwvxgWtO86YKwSU/XdzBvUwHYgv4EYI0rkLPEfvlRY/5sI676gRRTz87ZwJX3/HnA28EiMYuD/L2TiQwL5fEYYatRfnH5p7wOdSSCByO4Gtkhtt1hRewqxTsICW3AvQHWcsbhYCPBvGN/5/zsDSODMhoPdhH6iKsyymQcmZUy9bx1FJ9ChcUQovYZzBarr8YEWacZagWKCTjk9nZm2hs8iZtg7k+P+cwTaNCw4dXKyvuEUALyXI52q2uCXdzdxSNWPEKzQ3hXcwzoCZJS8S4gztLPGZG3Dmtg6kYtZ8Aa2K12cJEOPf5utceAG36aPQG7AEowb3SeBfB/lcWXBxqu5HabgAZyB/cbkBM2fDLmrU5S+B5+KUVueM1P+YW6pV38UklACboTZxxDg52MYGphMzBNBzxSdgCilwWgo25VnNn6E89gmuCNI4ZW8HzyPYLaHvCXE/KUIygTNy3TmhrMKc4V6IhhX6FQJHTI2AG2QSwiL0BlQpXDooTzirhDEdaw9zlAkVnIkAHjeZKwSCPXGfaqKlibNZcEb7Fv0OE8EZOq7d2MU1pc29LqIVbqIFXiwLcOmgkQsKW+VMfC9B+qKCMxGv7y5wQYFgRARuuLfFaZgIBJKnBwHO9JgvwZlws+9ytTuJ8WmbO+bE1+79Xb5AyUMOtkKjSuFOLRzrIGuVMy/s/Do1g5ZXz7tmoT++tPd9VikQ6Y+M9qP5UDyrjHxltrEaXCk4W8j0+Olelmt3QYh3YnYfRfLsk6/pKB5wd2DDuCUGQ8+1V/qir7Kp4syPNoo9l7YQSCi2jkMGUMjvWK9QY0Hlt9FyQChodz9I9QVlBdhswq8F8UYwFN4s9BInUjkBrqtT8EvJDOqpLEJenBDXlvAsghBnKv+Ss8ANeQwt7+Fp0CO+QAtHJIQd4G6bO9d1zuRwuT5Hzvj+uNfk7iRPIPVFvDgl6ApTnB+acvTuIKidB21vTA1FeBL4MTU2B8WD5gn3XoELQPkeN4db53Ccyit2A6HqVQKpueZNMeKCt65pes+/N6Kmje1vS60bFeDuxe7jzlCsNSxF50ws1k5B4Wmb9zFbzXKhfamqxo04KKHKQc60ixOVuz7Sqvd1ccFtNWnooUfzBANGhfHOlBrMQNrTYX4nGuTMv2WochTrAqmaaVqcf/AOsrVSgXY/yyR49exTm2uTCIOKNQ1lICKI0EReBEuCZ4k4w+HvXLGf8Fi5XDcskGHoU91ZqMg20bKDqwHmoRI0pH/OfFCtpfvubpE+BLqUCgtgvRoyrMQJxg4SmZIa82JH/fHKjb8FPFa/8xirYcSyPfVFngLf/E8XDLCivhfP1oRP/1PkAqdIzIXtnXZ/25exmfnLxFPVXe0/jSQVHKzGdVfsvxyGcF/Qbhy6ILszPJ/GabQbPuyO6XxQ+7n+FzCaR8Nix75dRePTR32JH0Yymb8dj8f08OfU1HqeJqfJbDabnF5+8Xg0GAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwXPAP+oudwQtLgXkAAAAASUVORK5CYII=" alt="logo">
+        </div>
+    <nav>
+        <ul class = "nav">
+            <li class = "nav__item"><a href="#we" class = "nav__link">Новинки</a></li>
+            <li class = "nav__item"><a href="#s" class = "nav__link">Лінійка <br>S</br></a></li>
+            <li class = "nav__item"><a href="#a" class = "nav__link">Лінійка <br> A </br></a></li>
+            <li class = "nav__item"><a href="#Fold" class = "nav__link"> Fold</a></li>
+            <li class = "nav__item"><a href="#Flip" class = "nav__link">Flip</a></li>
+            <li class = "nav__item"><a href="#Xcover" class = "nav__link">xcover</a></li>
+            <li class = "nav__item"><a href="#Buds" class = "nav__link">Buds</a></li>
+            <li class = "nav__item"><a href="#Watch" class = "nav__link">Watch</a></li>
+            <ul class = "nav">
+                        <li class = "nav__item"><a href="#ghy" class = "nav__link">Про нас</a></li>
+            </ul>
+        </ul>
+    </nav>
+    </div>
+
+        <div class = "banner__background">
+
+
+              
+
+            <img src="https://img.global.news.samsung.com/global/wp-content/uploads/2025/05/Samsung-Mobile-Galaxy-S25-Edge-Launch-Invitation_main1F.jpg" id="sedge">
+    
+      
+    </div>
+    <div class="text__block" id="vde">
+        <h1 class = "text__block_head">Зустрічайте новий <br>Samsung s-25 edge </h1>
+
+        <img src="https://ilenta.com/netcat_files/Image/Samsung-Galaxy-S25-Edge-2.jpg" id="sedge">
+      
+     
+    </div>
+    <div class="mugs__block">
+        <div class="mugs__block_head"  id="we">
+            <h3><span>Новинки</span></h3>
+        </div>
+        <div class="image__mur">
+            <div class="image__mug__block">
+                <div class="er"  id="er">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVLdf70O18ecZumGyNU4iFdMfgTJyPh0ZJag&s" alt="srt">
+                <h3 class="image__mug__block_item">Samsung s-25 edge</h3>
+                <h4 class = "image__mug__block_price">$ 1099.99 USD</h4>
+                </div>
+            </div>
+
+        
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="mugs__block">
+       
+            <h3><span>S 25</span></h3>
+        </div>
+        <div class="image__mug Featured__Mugs_Line" id="s">
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://content1.rozetka.com.ua/goods/images/big_tile/507072702.jpg" alt="Red Love Cup">
+                <h3 class="image__mug__block_item">S-25</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$799.99</span></h4>
+            </div>
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQn3jFLJv68G_MasqSULt81XpTlnMeY5rApNCwtC6wXCGPied0V-qUjE-IbXfOKzyTkUJTIL5CLbPiHLkjhEb-6eE-rCHWz1cJ6MSc30y4089tpSTh4Fk4wIA4Ln_xpsDEXdv4_Sw&usqp=CAc" alt="Black Tea Cup">
+                <h3 class="image__mug__block_item">S-25+</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$999.99</span> </h4>
+            </div>
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTJyS7CIrypxAYlOVEETruL6OxxRS5JZghNItZinLCZBIV-bUXcY_fbIH3pvy0g6hu1AfgUBpWJXTG4qeBi4u7Z3wsCMfZvDmNLJPgCOqNnPvkmC8RitloJEqrWw4_J3cOtJAW-dw&usqp=CAc" alt="B&W Essentials Mug">
+                <h3 class="image__mug__block_item">S-25 Ultra</h3>
+                <h4 class = "image__mug__block_price">$ 1299.00 USD</h4>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="ff">
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/e2RzNyexycc" title="Galaxy S25 | S25+ | S25 Ultra. Перший огляд вашого нового ідеального AI компаньйона ✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+    <div class="mugs__block_head buy_2_head ">
+        <h3>Акція</h3>
+    </div>
+    <div class="premium__offer">
+        <div class="premium__offer__right">
+            <img src="https://videos.openai.com/vg-assets/assets%2Ftask_01jvqdabrgf26vtp6n0nvjm4av%2F1747763745_img_2.webp?st=2025-05-20T16%3A55%3A37Z&se=2025-05-26T17%3A55%3A37Z&sks=b&skt=2025-05-20T16%3A55%3A37Z&ske=2025-05-26T17%3A55%3A37Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=UrCw0UspmEP6ODawtR3CEMi%2B174GtqBF%2FZ1JKCtf6o4%3D&az=oaivgprodscus" alt="">
+            
+        </div>
+        <div class="premium__offer__left">
+            <h3 class = "premium__offer__left_prehead">Преміум пропозиція</h3>
+            <h1 class = "premium__offer__left_head">Купуйте телефон і кейс  <br> і отримайте додатковий рік гарантії</h1>
+            <h2 class = "premium__offer__left_underhead">Діє з<br> 30.05 до 1.07</h2>
+            
+        </div>
+    </div>
+
+<div class="ff">
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/Jw8XDmhiLX8" title="Флагман чи середнячок? Смартфони Galaxy S vs Galaxy A — чесне порівняння!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="mugs__block">
+       
+            <h3><span>A</span></h3>
+        </div>
+        <div class="image__mug Featured__Mugs_Line" id="a">
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSO6PxNUkJH1QW26GqDc39i_S42Ixa_95xd1ujdzifRFrCQcqDc0QJQUk3XAfJ6oM0OKXB6LtbE99tfWzN9pRfyTDxHTP7w1rpGZ5LdPVE53FMWSkBlpIo5MFernlTqtlPf02PBq34&usqp=CAc" alt="Red Love Cup">
+                <h3 class="image__mug__block_item">A-56</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$513.58</span></h4>
+            </div>
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://cdn.samsungshop.com.ua/products/9662/cover/205763/A36-Lime.webp" alt="Black Tea Cup">
+                <h3 class="image__mug__block_item">a-36</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$388.88</span> </h4>
+            </div>
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQH9_QMLhVi8ANIdJXWqsDNoKVRu2vlBJwDX8I_0gk0NM8BAMQIw2gZ306Uc0yiRXkt293KD1yVH0ctcDb2ZtEoWESeNxKR85cM4t69NFB-1KDAPk0UK19WtPEga2FNLpV9WNC04Rw&usqp=CAc" alt="B&W Essentials Mug">
+                <h3 class="image__mug__block_item">a-26</h3>
+                <h4 class = "image__mug__block_price">$314.38</h4>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+<div class="ff">
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/7QQTy65D3B8" title="Galaxy A56 | A36 | A26 — перший огляд новинок від Samsung 🔥" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+     <div class="mugs__block">
+       
+            <h3><span>Fold</span></h3>
+        </div>
+        <div class="image__mug Featured__Mugs_Line" id="Fold">
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="data:image/jpeg;base64,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" alt="Red Love Cup">
+                <h3 class="image__mug__block_item">Fold-6</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$1856.99</span></h4>
+            </div>
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS8SEzuFGnutAVZHsNRMHAVZWTI_2hlAY0U_BZK3ZH7qrNclv2losiOozt1BrqoLLUYQRmh2ayyYbWEg9l8sSzTBPhotC3JbDlIRVnQhVw&usqp=CAc" alt="Black Tea Cup">
+                <h3 class="image__mug__block_item">Z Fold-6</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price"><p>$1899.99</p>
+                    немає в наявності</span> </h4>
+            </div>
+            
+        </div>
+
+        <div class="ff">
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/5u-K_mJHeVk" title="Galaxy Fold6 – ваш справжній кишеньковий комп&#39;ютер 💫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+
+     <div class="mugs__block">
+       
+            <h3><span>Flip</span></h3>
+        </div>
+        <div class="image__mug Featured__Mugs_Line" id="Flip">
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTBt_lwpLGpAjnn5sQQW_HI5xdICrN4lb4SSLKHCl_uz7C-61i6ifQTbGBD8A91YVcfPDZkpjvvV62uUngTFI6PH4qoj2QBgz0tQO5GxJjmtZfc6KJvCB7mPW-xFyL90RUpaLwuDgo&usqp=CAc" alt="Red Love Cup">
+                <h3 class="image__mug__block_item">Flip-6</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$900.41</span></h4>
+            </div>
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="data:image/jpeg;base64,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" alt="Black Tea Cup">
+                <h3 class="image__mug__block_item">Z Flip-6</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price"><p>$1219.99</p>
+                    немає в наявності</span> </h4>
+            </div>
+            
+        </div>
+
+        
+<div class="ff">
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/OEVQc8tv98o" title="Galaxy Flip6 – ваш ідеальний пристрій для самовираження ✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+        <div class="mugs__block">
+       
+            <h3><span>Xcover </span></h3>
+        </div>
+        <div class="image__mug Featured__Mugs_Line" id="Xcover">
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ8u4D8tYK8h7G8ATnPbyX6TY0V4RcJwJRdpYGDsiGobWnIKpJHyBZ1irfOZurSpAgu_EAghsP6jKzWn2trN0wW6hCj0eKuq7bWH6o1DUErv-Aco0G3JMm_plplhiJbtlvr1D9guJ-vht4&usqp=CAc" alt="Red Love Cup">
+                <h3 class="image__mug__block_item">Xcover 7</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$320.00</span></h4>
+            </div>
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-xcover7-pro-1.jpg" alt="Black Tea Cup">
+                <h3 class="image__mug__block_item">Xcover 7 pro</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$599.00</span> </h4>
+            </div>
+            
+        </div>
+        
+        </div>
+    </div>
+<div class="ff">
+
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/RDqbCZuRNpc" title="Galaxy XCover7 | Tab Active5: Use-case Film | Samsung" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+    
+ <div class="mugs__block">
+       
+            <h3><span>Buds </span></h3>
+        </div>
+        <div class="image__mug Featured__Mugs_Line" id="Buds">
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQywxXkE_0C8n6M3mLrxFHauGiH-MvQMKUHGQ&s" alt="Red Love Cup">
+                <h3 class="image__mug__block_item">Buds 3</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$179.99</span></h4>
+            </div>
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfrg0W3qqHTQKIhmhP80c7Zuu5jk9G4z3_A&s" alt="Black Tea Cup">
+                <h3 class="image__mug__block_item">Buds 3 pro</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$249.99</span> </h4>
+            </div>
+            
+        </div>
+        
+        </div>
+
+    </div>
+
+<div class="ff">
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/z3a3IBpnFUo" title="Galaxy Buds3|Buds3 Pro – поєднання стилю та якості звуку 🎵" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+<div class="mugs__block">
+       
+            <h3><span>Watch </span></h3>
+        </div>
+        <div class="image__mug Featured__Mugs_Line" id="Watch">
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQn8khYd_5jj_8xbLQXJUpaeByW2Ep0ZZuurXT1NImNI4gByuW2ja5Vvfh0TvhRK_cKMZZMwcr9uNantJFh-O2IEFY_DIIrt5Jshui_B3f906pTiRjm7OPvT-N6ElX0G9NwEfhjnA&usqp=CAc" alt="Red Love Cup">
+                <h3 class="image__mug__block_item">Watch 7</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$347.99</span></h4>
+            </div>
+            <div class="image__mug__block Featured__Mugs_Size">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTDBYIaFD8nX-0-aP1x1nId2qUgPdIly6k3PV6Hj9kHMRksubACsCnx4mPYYvt1XYmT7RnG63L400fDnl0o65Ir_zpIJk4MY9wP7V2p637hhr0FqTT5xZAPngO9-wHj4-XRJTVgZbk&usqp=CAc" alt="Black Tea Cup">
+                <h3 class="image__mug__block_item">Watch 7 Ultra</h3>
+                <h4 class = "image__mug__block_price" > <span class = "new_price">$649.99</span> </h4>
+            </div>
+            
+        </div>
+        
+        </div>
+    </div>
+
+
+<div class="ff">
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/kvubKGQzr8s" title="Galaxy Watch7 та Galaxy Watch Ultra – нова ера турботи про здоров&#39;я з Galaxy AI! 💫" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+    <div class="mugs__block_head Behind__head" id="ghy">
+        <h3> Про  нас</h3>
+    </div>
+    <div class="behind__container">
+        <div class="behind__container__item">
+           
+            <h2 class="behind__container_head">У Samsung ми віримо, що технології мають служити людям. Понад 80 років ми є рушійною силою інновацій, що змінюють світ, від першого чорно-білого телевізора до революційних складних смартфонів та інтелектуальних рішень для "розумного" дому. Наша подорож – це не лише про створення продуктів, а й про постійне переосмислення можливого.
+Ми прагнемо не просто відповідати вашим потребам, а й передбачати їх. Кожен наш продукт, кожна розробка – це крок до більш комфортного, зв'язаного та насиченого життя. Ми створюємо технології, що відкривають нові можливості, надихають на творчість та допомагають вам досягати більшого.
+Ми – команда ентузіастів, інженерів, дизайнерів та мрійників, об'єднаних єдиною метою: надати вам найкраще. Історія Samsung – це історія невпинного розвитку, інновацій та, найголовніше, довіри мільйонів користувачів по всьому світу. Приєднуйтесь до нас у подорожі до майбутнього, яке ми будуємо разом, вже сьогодні.</h2>
+        
+   
+   <footer id="foot">
+    <div class="footer__container">
+        <div class="first_colomn">
+            <img src="data:image/png;base64,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" alt="logo">
+            <p class="first_colomn_text">Постачання найкращої кави з 1996 року.<br> Від кавоманів до справжніх гурманів</p>
+            <p class="first_colomn_undertext">CoffeeStyle Inc. © 1996</p>
+        </div>
+        <div class="second_colomn">
+            <h3 class="second_colomn_head">Menu</h3>
+                <ul class = "nav">
+                    <li class = "second__colomn_item"><a href="" class = "second__colomn__link">Home</a></li>
+                    <li class = "second__colomn__item"><a href="" class = "second__colomn__link">Our product</a></li>
+                    <li class = "second__colomn__item"><a href="" class = "second__colomn__link">About</a></li>
+                    <li class = "second__colomn__item"><a href="" class = "second__colomn__link">Contact</a></li>
+                    <li class = "second__colomn__item"><a href="" class = "second__colomn__link">Styleguide</a></li>
+                </ul>
+        </div>
+        <div class="second_colomn">
+            <h3 class="second_colomn_head">Follow us</h3>
+                <ul class = "nav">
+                    <li class = "second__colomn_item"><a href="" class = "second__colomn__link">Facebook</a></li>
+                    <li class = "second__colomn__item"><a href="" class = "second__colomn__link">Instagram</a></li>
+                    <li class = "second__colomn__item"><a href="" class = "second__colomn__link">Pinterest</a></li>
+                    <li class = "second__colomn__item"><a href="" class = "second__colomn__link">Twitter</a></li>
+                </ul>
+        </div>
+        <div class="fourth_colomn">
+            <h3 class="second_colomn_head">Contact us</h3>
+                <h3 class="fourth_colomn__head">We’re Always Happy to Help</h3>
+                <p class="fourth_colomn__email">us@coffeestyle.io</p>
+                <p class="fourth_colomn_undertext">Powered by Webflow</p>
+        </div>
+    </div>
+   </footer>
+
+</body>
+</html>
